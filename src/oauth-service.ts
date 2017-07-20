@@ -195,7 +195,7 @@ export class OAuthService {
             var response_type = "token";
 
             if (that.oidc) {
-                response_type = "id_token";
+                response_type = "id_token+token";
             }
 
             var url = that.loginUrl;
