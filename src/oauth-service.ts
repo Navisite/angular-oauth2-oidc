@@ -205,17 +205,17 @@ export class OAuthService {
                 url += '?';
             }
 
-            url = that.loginUrl
-                        + "response_type="
-                        + response_type
-                        + "&client_id="
-                        + encodeURIComponent(that.clientId)
-                        + "&state="
-                        + encodeURIComponent(state)
-                        + "&redirect_uri="
-                        + encodeURIComponent(that.redirectUri)
-                        + "&scope="
-                        + encodeURIComponent(that.scope);
+            url = url
+                + "response_type="
+                + response_type
+                + "&client_id="
+                + encodeURIComponent(that.clientId)
+                + "&state="
+                + encodeURIComponent(state)
+                + "&redirect_uri="
+                + encodeURIComponent(that.redirectUri)
+                + "&scope="
+                + encodeURIComponent(that.scope);
 
             if (that.resource) {
                 url += "&resource=" + encodeURIComponent(that.resource);
